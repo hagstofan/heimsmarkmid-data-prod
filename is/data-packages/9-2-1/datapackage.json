@@ -1,0 +1,71 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Hlutfall (%) af vergri þjóðarframleiðslu",
+                "Millj. kr á íbúa",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
+            "name": "Industry category",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "C. Framleiðsla",
+                "C: 10-12 Matvæla- og drykkjavöruiðnaður; tóbaksiðnaður",
+                "C: 10-12 Þaraf Fiskvinnsla",
+                "C: 13-15 Textíl-, fata- og leðuriðnaður",
+                "C: 16-17 Trjá- og pappírsiðnaður",
+                "C: 18 Prentun og fjölföldun upptekins efnis",
+                "C: 19 Framleiðsla á koksi og hreinsuðum olíuvörum",
+                "C: 20-21 Framleiðsla á efnum og efnavörum og á lyfjum og efnum til lyfjagerðar",
+                "C: 22 Framleiðsla á gúmmí- og plastvörum",
+                "C: 23 Framleiðsla á vörum úr málmlausum steinefnum",
+                "C: 24 Framleiðsla málma",
+                "C: 25 Framleiðsla á málmvörum, að undanskildum vélum og búnaði",
+                "C: 26 Framleiðsla á tölvu-, rafeinda- og optískum vörum",
+                "C: 27 Framleiðsla á rafbúnaði og heimilistækjum",
+                "C: 28 Framleiðsla á öðrum ótöldum vélum og tækjum",
+                "C: 29 Framleiðsla á vélknúnum ökutækjum og tengivögnum",
+                "C: 30 Framleiðsla annarra farartækja",
+                "C: 31-32 Framleiðsla á húsgögnum, innréttingum og vörum til lækninga; önnur framleiðsla",
+                "C: 33 Viðgerðir og uppsetning vélbúnaðar og tækja",
+                ""
+              ]
+            },
+            "title": "Atvinnugrein"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "9-2-1",
+  "title": "Manufacturing value added as a proportion of GDP and per capita"
+}

@@ -1,0 +1,59 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Sector",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A - Landbúnaður, skógrækt og fiskveiðar",
+                "B - Námugröftur og vinnsla hráefna úr jörðu",
+                "C - Framleiðsla",
+                "D - Rafmagns-, gas- og hitaveitur",
+                "E - Vatnsveita, fráveita, meðhöndlun úrgangs og afmengun",
+                "F - Byggingastarfsemi og mannvirkjagerð",
+                "G - Heild og smásöluverslun, viðgerðir á vélknúnum ökutækjum",
+                "H - Flutningur og geymsla",
+                "I - Rekstur gististaða og veitingarekstur",
+                "J - Upplýsingar og fjarskipti",
+                "K - Fjármála og vátryggingastarfsemi",
+                "M - Sérfræðileg, vísindaleg og tæknileg starfsemi",
+                "N - Leigustarfsemi og ýmis sérhæfð þjónusta",
+                "O - Opinber stjórnsýsla og varnarmál; almannatryggingar",
+                "P - Fræðslustarfsemi",
+                "Q - Heilbrigðis og félagsþjónusta",
+                "R - Menningar, íþrjótta og tómstundastarfsemi",
+                "S - Félagasamtök og önnur þjónustustarfsemi",
+                "U - Starfsemi stofnana og samtaka með úrlendisrétt",
+                ""
+              ]
+            },
+            "title": "Atvinnugrein"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "9-4-1",
+  "title": "CO2 emission per unit of value added"
+}

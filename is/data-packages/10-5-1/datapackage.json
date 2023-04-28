@@ -1,0 +1,47 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Indicator",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Hlutfall lausaeigna við skammtímaskuldbindingar.",
+                "Eigið fé sem hlutfall af eignum samkvæmt reglugerðarflokki 1.",
+                "Eigið fé sem hlutfall af áhættuvegnum eignum samkvæmt reglugerðarflokki 1.",
+                "Hlutfall útlána í vanskilum af niðurfellingum lána.",
+                "Útlán í vanskilum sem hlutfall af heildar lánveitingum.",
+                "Arðsemi eigna.",
+                "Munur á erlendum eignum og skuldbindingum.",
+                ""
+              ]
+            },
+            "title": "Mælikvarði"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "10-5-1",
+  "title": "Financial Soundness Indicators"
+}

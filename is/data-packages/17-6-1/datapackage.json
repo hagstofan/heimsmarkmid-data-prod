@@ -1,0 +1,43 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Connection type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Jafnt eða yfir 10 Mbit/s",
+                "256 kbit/s til minna en 2 Mbit/s",
+                "2 Mbit/s til minna en 10 Mbit/s",
+                ""
+              ]
+            },
+            "title": "Tegund tengingu"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "17-6-1",
+  "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed"
+}

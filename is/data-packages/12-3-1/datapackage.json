@@ -1,0 +1,94 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Waste type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Matur og óætur úrgangur",
+                "Matur",
+                ""
+              ]
+            },
+            "title": "Tegund úrgangs"
+          },
+          {
+            "name": "Waste origin",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Heimili",
+                "Fyrirtæki",
+                ""
+              ]
+            },
+            "title": "Uppruni úrgangs"
+          },
+          {
+            "name": "Sector",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Landbúnaður (01)",
+                "Heildsala (46)",
+                "Smásala (47)",
+                "Gistiþjónusta (55)",
+                "Veitingaþjónusta (56)",
+                "Fræðslustarfsemi (P)",
+                "Kjötvinnsla (10.1)",
+                "Ávaxta- og grænmetisvinnsla (10.3)",
+                "Framleiðsla olíu og feiti (10.4)",
+                "Framleiðsla bökunarvara (10.7)",
+                "Heilbrigðisstofnanir (86)",
+                "Öldrunarheimili (87)",
+                "Kjötvinnsla (03)",
+                "Framleiðsla mjólkurvara (10.5)",
+                "Framleiðsla annara matvæla (10.8)",
+                "Framleiðsla drykkjavara (11)",
+                "Heildsala og smásala (46 og 47)",
+                "Education (85)",
+                ""
+              ]
+            },
+            "title": "Atvinnugrein"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Tonn",
+                "Kg á íbúa",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "12-3-1",
+  "title": "(a) Food loss index and (b) food waste index"
+}

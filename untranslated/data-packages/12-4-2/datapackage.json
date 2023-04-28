@@ -1,0 +1,50 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Type of treatment",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Recovery",
+                "Disposal",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Tonne per capita",
+                "Percentage of all hazardous waste",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "12-4-2",
+  "title": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment"
+}

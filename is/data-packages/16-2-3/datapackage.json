@@ -1,0 +1,74 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "dialect": {
+        "quoteChar": "\""
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Gender",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Karl",
+                "Kona",
+                ""
+              ]
+            },
+            "title": "Kyn"
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "'20'",
+                "'19'",
+                "'18'",
+                "'17'",
+                "'16'",
+                "'15'",
+                "'14'",
+                ""
+              ]
+            },
+            "title": "Aldur"
+          },
+          {
+            "name": "Perpetrator",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Fullorðinn",
+                "Jafnaldri",
+                ""
+              ]
+            },
+            "title": "Gerandi"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "16-2-3",
+  "title": "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18"
+}

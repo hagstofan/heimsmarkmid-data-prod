@@ -1,0 +1,74 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Gender",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sector",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total - excluding public administration (O)",
+                "Private sector",
+                "Public sector, total",
+                "Public sector, central government",
+                "Public sector, local government",
+                "Full-time",
+                "Part-time",
+                "Manufacturing (C)",
+                "Electricity, gas, steam, and air conditioning supply (D)",
+                "Wholesale and retail trade; repair of motor vehicles (G)",
+                "Transportation and storage (H)",
+                "Information and communication (J)",
+                "Accomodation and food services (I)",
+                "Financial and insurance activities (K)",
+                "Public administration and defence; compulsory social sec. (O)",
+                "Education (P)",
+                "Human health and social work activities (Q)",
+                "Managers (1)",
+                "Professionals (2)",
+                "Technicians and associate professionals (3)",
+                "Clerks (4)",
+                "Service workers and shop and market sales workers (5)",
+                "Craft and related workers (7)",
+                "Plant and machine operators and assemblers (8)",
+                "Elementary occupations (9)",
+                "General, machine and specialized workers",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "8-5-1",
+  "title": "Average hourly earnings of employees, by sex, age, occupation and persons with disabilities"
+}

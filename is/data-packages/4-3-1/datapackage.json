@@ -1,0 +1,66 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Education Category",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Formlegt",
+                "Óformlegt",
+                ""
+              ]
+            },
+            "title": "Tegund náms"
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "16-24",
+                "25-64",
+                ""
+              ]
+            },
+            "title": "Aldur"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Karl",
+                "Kona",
+                ""
+              ]
+            },
+            "title": "Kyn"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "4-3-1",
+  "title": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex"
+}

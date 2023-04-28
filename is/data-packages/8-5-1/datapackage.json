@@ -1,0 +1,78 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Ár"
+          },
+          {
+            "name": "Gender",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Karl",
+                "Kona",
+                ""
+              ]
+            },
+            "title": "Kyn"
+          },
+          {
+            "name": "Sector",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Alls - án opinberrar stjórnsýslu (O)",
+                "Almennur vinnumarkaður",
+                "Opinberir starfsmenn",
+                "Opinberir starfsmenn - ríkisstarfsmenn",
+                "Opinberir starfsmenn - starfsmenn sveitarfélaga",
+                "Fullvinnandi",
+                "Hlutastarfsfólk",
+                "Framleiðsla (C)",
+                "Rafmagns-, gas- og hitaveitur (D)",
+                "Heild- og smásöluverslun, viðgerðir á vélknúnum ökutækjum (G)",
+                "Flutningar og geymsla (H)",
+                "Upplýsingar og fjarskipti (J)",
+                "Rekstur gististaða og veitingarekstur (I)",
+                "Fjármála- og vátryggingastarfsemi (K)",
+                "Opinber stjórnsýsla og varnarmál; almannatryggingar (O)",
+                "Fræðslustarfsemi (P)",
+                "Heilbrigðis- og félagsþjónusta (Q)",
+                "Stjórnendur (1)",
+                "Sérfræðingar (2)",
+                "Tæknar og sérmenntað starfsfólk (3)",
+                "Skrifstofufólk (4)",
+                "Þjónustu-, sölu- og afgreiðslufólk (5)",
+                "Iðnaðarmenn og sérhæft iðnverkafólk (7)",
+                "Véla- og vélgæslufólk (8)",
+                "Ósérhæft starfsfólk (9)",
+                "Verkafólk",
+                ""
+              ]
+            },
+            "title": "Atvinnugrein"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Gildi"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "8-5-1",
+  "title": "Average hourly earnings of employees, by sex, age, occupation and persons with disabilities"
+}
