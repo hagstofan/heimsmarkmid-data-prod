@@ -5147,23 +5147,10 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Lífeindafræðingar",
-                "Tannfræðingar",
-                "Tanntæknar og aðstoðarfólk tannlækna",
-                "Tannlæknar",
-                "Heilbrigðisfulltrúar",
-                "Aðstoðarlyfjafræðingar",
-                "Ljósmæður",
-                "Hjúkrunarfræðingar",
-                "Iðjuþjálfar",
-                "Lyfjafræðingar",
-                "Lyfjatæknar",
                 "Læknar",
-                "Sjúkraþjálfarar",
-                "Sjúkraliðar",
-                "Lyfsalar",
-                "Geislafræðingar",
-                "Félagsráðgjafar",
+                "Hjúkrunarfræðingar og ljósmæður",
+                "Lyfjafræðingar",
+                "Tannlæknar",
                 ""
               ]
             },
