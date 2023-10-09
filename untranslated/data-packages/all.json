@@ -461,8 +461,8 @@
                 "Electricity, gas, steam, and air conditioning supply (D)",
                 "Wholesale and retail trade; repair of motor vehicles (G)",
                 "Transportation and storage (H)",
-                "Information and communication (J)",
                 "Accomodation and food services (I)",
+                "Information and communication (J)",
                 "Financial and insurance activities (K)",
                 "Public administration and defence; compulsory social sec. (O)",
                 "Education (P)",
@@ -481,7 +481,7 @@
           },
           {
             "name": "Value",
-            "type": "number"
+            "type": "integer"
           }
         ]
       },
@@ -4871,9 +4871,8 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "5 years and younger",
-                "6 - 12 years",
-                "13 - 18 years",
+                "Under 15 years",
+                "15 - 19 years",
                 "Total",
                 ""
               ]
@@ -4891,19 +4890,8 @@
             }
           },
           {
-            "name": "Nationality",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Foreign",
-                "Icelandic",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Value",
-            "type": "number"
+            "type": "integer"
           }
         ]
       },
